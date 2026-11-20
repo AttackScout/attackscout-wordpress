@@ -1,0 +1,15 @@
+# Code of the plugin at the highest level, against the WordPress declarations
+# of php-stubs/wordpress-stubs. The tests run against a fake WordPress
+# (tests/Fakes/wordpress.php), which declares the same functions: they are not
+# analysed together.
+parameters:
+    level: max
+    phpVersion: 70400
+    paths:
+        - attackscout
+    excludePaths:
+        # Generated from the .po files by bin/i18n.php.
+        - attackscout/languages
+    scanFiles:
+        - vendor/php-stubs/wordpress-stubs/wordpress-stubs.php
+    tmpDir: build/phpstan

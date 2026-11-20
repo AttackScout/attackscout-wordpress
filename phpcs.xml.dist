@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- WordPress Coding Standards on the plugin: escaping, nonces, sanitising,
+     internationalisation, prefixes. These are the rules the WordPress.org
+     reviewers and Plugin Check rely on. -->
+<ruleset name="AttackScout">
+    <file>attackscout</file>
+    <!-- Generated from the .po files by bin/i18n.php. -->
+    <exclude-pattern>*/languages/*</exclude-pattern>
+    <arg name="extensions" value="php"/>
+    <arg value="sp"/>
+    <arg name="cache" value="build/phpcs.cache"/>
+
+    <config name="minimum_wp_version" value="6.5"/>
+    <config name="testVersion" value="7.4-"/>
+
+    <rule ref="WordPress"/>
+
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array">
+                <element value="attackscout"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <properties>
+            <property name="prefixes" type="array">
+                <element value="attackscout"/>
+            </property>
+        </properties>
+    </rule>
+</ruleset>

@@ -1,0 +1,42 @@
+/* AttackScout: dashboard widget and settings page. */
+.attackscout-headline {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 8px 0;
+}
+.attackscout-grade {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 8px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	background: #50575e;
+}
+.attackscout-grade-A { background: #1d6b3a; }
+.attackscout-grade-B { background: #4c7a1e; }
+.attackscout-grade-C { background: #8a6d00; }
+.attackscout-grade-D { background: #a3501b; }
+.attackscout-grade-E { background: #a3261b; }
+.attackscout-grade-F { background: #7a1010; }
+.attackscout-list { margin: 0 0 12px; }
+.attackscout-list li { margin: 4px 0; }
+.attackscout-tag {
+	display: inline-block;
+	padding: 0 6px;
+	border: 1px solid currentColor;
+	border-radius: 4px;
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+.attackscout-sev-blocking,
+.attackscout-sev-critical,
+.attackscout-urg-now { color: #b32d2e; }
+.attackscout-sev-high,
+.attackscout-urg-this_month { color: #996800; }
+.attackscout-urg-ok { color: #007017; }

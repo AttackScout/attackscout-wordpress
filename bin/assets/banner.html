@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AttackScout banner</title>
+<style>
+  :root { --nuit: #14212B; --papier: #F5F2EB; --ocre: #C98A1B; --gris: #B6BFC7; }
+  html, body { margin: 0; }
+  body {
+    width: 772px; height: 250px; overflow: hidden; position: relative;
+    background: var(--nuit);
+    background-image: radial-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px);
+    background-size: 18px 18px;
+    font-family: "Noto Sans", "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+    color: var(--papier);
+  }
+  .text { position: absolute; left: 44px; top: 70px; width: 570px; }
+  h1 { margin: 0; font-size: 44px; line-height: 1.1; font-weight: 700; letter-spacing: -.5px; }
+  .tag { margin-top: 16px; display: flex; align-items: flex-start; gap: 12px; font-size: 18px; line-height: 1.35; color: var(--gris); }
+  .tag i { flex: none; width: 28px; height: 3px; background: var(--ocre); margin-top: 12px; }
+  .logo { position: absolute; right: 48px; top: 50px; width: 150px; height: 150px; }
+</style>
+</head>
+<body>
+  <div class="text">
+    <h1>AttackScout</h1>
+    <div class="tag"><i></i><span>Your site's security grade, as seen from the Internet.</span></div>
+  </div>
+  <img class="logo" src="../../../../docs/marque/logo-attackscout-400.png" alt="">
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+    "name": "attackscout/wordpress-plugin",
+    "description": "AttackScout plugin for WordPress: security grade, deadlines and versions on the dashboard, audit on demand.",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "1.2.1",
+        "php-stubs/wordpress-stubs": "7.1.2",
+        "phpstan/phpstan": "2.3.3",
+        "phpunit/phpunit": "9.6.39",
+        "wp-coding-standards/wpcs": "3.4.1"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AttackScout\\WordPress\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.33"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "coverage": "phpunit --coverage-text --coverage-clover=build/clover.xml",
+        "analyse": "phpstan analyse --no-progress --memory-limit=1G",
+        "lint": "phpcs",
+        "lint:fix": "phpcbf",
+        "i18n": "php bin/i18n.php",
+        "package": "php bin/package.php"
+    }
+}

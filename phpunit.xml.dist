@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         cacheResultFile="build/phpunit.cache"
+         failOnWarning="true"
+         failOnRisky="true"
+         beStrictAboutOutputDuringTests="true"
+         convertDeprecationsToExceptions="true">
+    <testsuites>
+        <testsuite name="attackscout-wordpress">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">attackscout</directory>
+        </include>
+        <exclude>
+            <!-- Generated from the .po files by bin/i18n.php, checked by I18nTest. -->
+            <directory>attackscout/languages</directory>
+        </exclude>
+    </coverage>
+</phpunit>

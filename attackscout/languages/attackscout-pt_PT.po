@@ -1,0 +1,253 @@
+# pt_PT translation of AttackScout.
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: AttackScout 0.1.0\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: attackscout\n"
+
+msgid "AttackScout"
+msgstr "AttackScout"
+
+msgid "Shows the AttackScout security grade of your site (A to F), its upcoming deadlines and your PHP and WordPress versions on the dashboard. The audit only runs when an administrator clicks."
+msgstr "Mostra no painel a nota de seguranço AttackScout do seu site (de A a F), os próximos prazos e as versões de PHP e WordPress. A auditoria só arranca quando um administrador clica."
+
+msgid "This is not an AttackScout API key (as_live_ followed by 48 hexadecimal characters). The saved key is unchanged."
+msgstr "Esta não é uma chave de API do AttackScout (as_live_ seguido de 48 carateres hexadecimais). A chave guardada não foi alterada."
+
+msgid "AttackScout security grade"
+msgstr "Nota de seguranço AttackScout"
+
+msgid "Settings"
+msgstr "Definições"
+
+msgid "AttackScout shows what anyone can see of your site from the Internet (email, DNS, certificate, HTTP headers, exposed files) and grades it from A to F."
+msgstr "O AttackScout mostra o que qualquer pessoa pode ver do seu site a partir da Internet (e-mail, DNS, certificado, cabeçalhos HTTP, ficheiros expostos) e atribui-lhe uma nota de A a F."
+
+msgid "Latest audit"
+msgstr "Última auditoria"
+
+msgid "API key"
+msgstr "Chave de API"
+
+msgid "AttackScout API key"
+msgstr "Chave de API do AttackScout"
+
+msgid "Saved key: %s… Leave the field empty to keep it."
+msgstr "Chave guardada: %s… Deixe o campo vazio para a manter."
+
+msgid "Create a key in your AttackScout account, \"API keys\" page: channel \"WordPress\", scope scans:write only. The key is stored in the options of this site and only sent to AttackScout."
+msgstr "Crie uma chave na sua conta AttackScout, página «Chaves de API»: canal «WordPress», apenas o âmbito scans:write. A chave é guardada nas opções deste site e enviada somente ao AttackScout."
+
+msgid "Save the key"
+msgstr "Guardar a chave"
+
+msgid "Remove the key"
+msgstr "Remover a chave"
+
+msgid "What is sent"
+msgstr "O que é enviado"
+
+msgid "Nothing is sent when you install or open WordPress. When an administrator clicks \"Run the audit\", the plugin sends the domain name of this site, with your key, to the AttackScout API (attackscout.com). AttackScout then audits only what is public on the Internet. The plugin stores the summary of the latest audit in the options of this site."
+msgstr "Nada é enviado quando instala ou abre o WordPress. Quando um administrador clica em «Iniciar a auditoria», o plugin envia o nome de domínio deste site, com a sua chave, para a API do AttackScout (attackscout.com). O AttackScout audita então apenas o que é público na Internet. O plugin guarda o resumo da última auditoria nas opções deste site."
+
+msgid "Add your AttackScout API key to run the audit of this site."
+msgstr "Adicione a sua chave de API do AttackScout para iniciar a auditoria deste site."
+
+msgid "Audit done."
+msgstr "Auditoria concluída."
+
+msgid "API key removed."
+msgstr "Chave de API removida."
+
+msgid "Add your AttackScout API key first."
+msgstr "Adicione primeiro a sua chave de API do AttackScout."
+
+msgid "This site has no public domain name: AttackScout can only audit a site that is reachable from the Internet."
+msgstr "Este site não tem um nome de domínio público: o AttackScout só pode auditar um site acessível a partir da Internet."
+
+msgid "Your API key is not recognised. Check it in the settings."
+msgstr "A sua chave de API não é reconhecida. Verifique-a nas definições."
+
+msgid "Your API key has been revoked. Create a new one in your AttackScout account."
+msgstr "A sua chave de API foi revogada. Crie uma nova na sua conta AttackScout."
+
+msgid "Your API key cannot run audits: it needs the scans:write scope."
+msgstr "A sua chave de API não pode iniciar auditorias: precisa do âmbito scans:write."
+
+msgid "The owner of this domain asked not to be audited."
+msgstr "O titular deste domínio pediu para não ser auditado."
+
+msgid "This domain name cannot be audited."
+msgstr "Este nome de domínio não pode ser auditado."
+
+msgid "This domain does not exist in the DNS."
+msgstr "Este domínio não existe no DNS."
+
+msgid "Too many requests. Try again in %s min."
+msgstr "Demasiados pedidos. Tente novamente dentro de %s min."
+
+msgid "Too many requests. Try again later."
+msgstr "Demasiados pedidos. Tente novamente mais tarde."
+
+msgid "Daily audit quota reached. Try again in %s min."
+msgstr "Quota diária de auditorias atingida. Tente novamente dentro de %s min."
+
+msgid "Daily audit quota reached. Try again tomorrow."
+msgstr "Quota diária de auditorias atingida. Tente novamente amanhã."
+
+msgid "AttackScout cannot be reached from this site. Try again later."
+msgstr "O AttackScout não está acessível a partir deste site. Tente novamente mais tarde."
+
+msgid "The service will be available on Nov 30, 2026."
+msgstr "O serviço estará disponível a 30/11/2026."
+
+msgid "Something went wrong on our side. Try again later."
+msgstr "Ocorreu um problema do nosso lado. Tente novamente mais tarde."
+
+msgid "No audit yet."
+msgstr "Ainda sem auditoria."
+
+msgid "Audit of %s"
+msgstr "Auditoria de %s"
+
+msgid "%d point to fix"
+msgid_plural "%d points to fix"
+msgstr[0] "%d ponto a corrigir"
+msgstr[1] "%d pontos a corrigir"
+
+msgid "No point to fix in the public audit."
+msgstr "Nenhum ponto a corrigir na auditoria pública."
+
+msgid "Partial grade: fewer than 70% of the checks could be verified."
+msgstr "Nota parcial: menos de 70 % dos controlos puderam ser verificados."
+
+msgid "Main points"
+msgstr "Pontos principais"
+
+msgid "%1$s: %2$d"
+msgstr "%1$s: %2$d"
+
+msgid "Deadlines"
+msgstr "Prazos"
+
+msgid "How to fix these points"
+msgstr "Como corrigir estes pontos"
+
+msgid "Monitor this site and get deadline alerts"
+msgstr "Monitorizar este site e receber alertas de prazos"
+
+msgid "Versions"
+msgstr "Versões"
+
+msgid "PHP %s"
+msgstr "PHP %s"
+
+msgid "no longer receives security updates"
+msgstr "já não recebe atualizações de segurança"
+
+msgid "WordPress %s"
+msgstr "WordPress %s"
+
+msgid "version %s available"
+msgstr "versão %s disponível"
+
+msgid "Clicking sends the domain name %s, and nothing else, to AttackScout."
+msgstr "O clique envia o nome de domínio %s, e mais nada, ao AttackScout."
+
+msgid "Run the audit"
+msgstr "Iniciar a auditoria"
+
+msgid "Sorry, you are not allowed to do this."
+msgstr "Desculpe, não tem permissão para fazer isto."
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Website"
+msgstr "Site"
+
+msgid "Domain name"
+msgstr "Nome de domínio"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "TLS certificate"
+msgstr "Certificado TLS"
+
+msgid "HTTP headers"
+msgstr "Cabeçalhos HTTP"
+
+msgid "Page content"
+msgstr "Conteúdo das páginas"
+
+msgid "Software versions"
+msgstr "Versões do software"
+
+msgid "Reputation"
+msgstr "Reputação"
+
+msgid "Subdomains"
+msgstr "Subdomínios"
+
+msgid "Exposure"
+msgstr "Exposição"
+
+msgid "Trust"
+msgstr "Confiança"
+
+msgid "Blocking"
+msgstr "Bloqueante"
+
+msgid "Critical"
+msgstr "Crítica"
+
+msgid "High"
+msgstr "Elevada"
+
+msgid "Medium"
+msgstr "Média"
+
+msgid "Low"
+msgstr "Baixa"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Broken now"
+msgstr "Avariado agora"
+
+msgid "To fix this month"
+msgstr "A resolver este mês"
+
+msgid "To plan"
+msgstr "A planear"
+
+msgid "In order"
+msgstr "Em ordem"
+
+msgid "Good to know"
+msgstr "Bom saber"
+
+msgid "End of support: %s"
+msgstr "Fim do suporte: %s"
+
+msgid "Domain name expiry"
+msgstr "Expiração do nome de domínio"
+
+msgid "TLS certificate expiry"
+msgstr "Expiração do certificado TLS"
+
+msgid "Certificates move to 100 days"
+msgstr "Os certificados passam para 100 dias"
+
+msgid "Deadline (check %s)"
+msgstr "Prazo (controlo %s)"
+
+msgid "Create a free key"
+msgstr "Criar uma chave gratuita"
